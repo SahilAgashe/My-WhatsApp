@@ -14,6 +14,7 @@
 		8184A9BA2AF3448B006484B9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8184A9B92AF3448B006484B9 /* LoginView.swift */; };
 		8194D4282AF49B45002861B7 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8194D4272AF49B45002861B7 /* RegistrationView.swift */; };
 		81E2F0B02AF554BD00550881 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2F0AF2AF554BD00550881 /* CustomTextField.swift */; };
+		81E2F0B32AF5626500550881 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2F0B22AF5626500550881 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8184A9B92AF3448B006484B9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8194D4272AF49B45002861B7 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		81E2F0AF2AF554BD00550881 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		81E2F0B22AF5626500550881 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		8184A9B42AF343E9006484B9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				81E2F0B12AF5625100550881 /* Main */,
 				8184A9B82AF3446A006484B9 /* Authentication */,
 			);
 			path = View;
@@ -122,6 +125,14 @@
 				8194D4272AF49B45002861B7 /* RegistrationView.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		81E2F0B12AF5625100550881 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				81E2F0B22AF5626500550881 /* MainTabView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				8184A9A62AF34216006484B9 /* My_WhatsAppApp.swift in Sources */,
 				8194D4282AF49B45002861B7 /* RegistrationView.swift in Sources */,
 				81E2F0B02AF554BD00550881 /* CustomTextField.swift in Sources */,
+				81E2F0B32AF5626500550881 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,6 @@ import SwiftUI
 struct LoginView: View {
     
     // MARK: - properties
-    
     @State private var email = ""
     @State private var password = ""
     
@@ -30,7 +29,7 @@ struct LoginView: View {
                         .bold()
                         .foregroundColor(.blue)
                     
-                    VStack(spacing: 20) {
+                    VStack(spacing: 40) {
                         CustomTextField(imageName: "envelope",
                                         placeholderText: "Email",
                                         text: $email,
@@ -78,6 +77,7 @@ struct LoginView: View {
                 
                 NavigationLink {
                     RegistrationView()
+                        .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack {
                         Text("Don't have an account?")
