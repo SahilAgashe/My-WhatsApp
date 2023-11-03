@@ -11,6 +11,9 @@
 		8184A9A82AF34216006484B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8184A9A72AF34216006484B9 /* ContentView.swift */; };
 		8184A9AA2AF34217006484B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8184A9A92AF34217006484B9 /* Assets.xcassets */; };
 		8184A9AD2AF34217006484B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8184A9AC2AF34217006484B9 /* Preview Assets.xcassets */; };
+		8184A9BA2AF3448B006484B9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8184A9B92AF3448B006484B9 /* LoginView.swift */; };
+		8194D4282AF49B45002861B7 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8194D4272AF49B45002861B7 /* RegistrationView.swift */; };
+		81E2F0B02AF554BD00550881 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2F0AF2AF554BD00550881 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		8184A9A72AF34216006484B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8184A9A92AF34217006484B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8184A9AC2AF34217006484B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8184A9B92AF3448B006484B9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8194D4272AF49B45002861B7 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		81E2F0AF2AF554BD00550881 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,11 @@
 		8184A9A42AF34216006484B9 /* My-WhatsApp */ = {
 			isa = PBXGroup;
 			children = (
+				8184A9B72AF3441F006484B9 /* Utils */,
+				8184A9B62AF34414006484B9 /* API */,
+				8184A9B52AF343F7006484B9 /* ViewModel */,
+				8184A9B42AF343E9006484B9 /* View */,
+				8184A9B32AF343D8006484B9 /* Model */,
 				8184A9A52AF34216006484B9 /* My_WhatsAppApp.swift */,
 				8184A9A72AF34216006484B9 /* ContentView.swift */,
 				8184A9A92AF34217006484B9 /* Assets.xcassets */,
@@ -65,6 +76,52 @@
 				8184A9AC2AF34217006484B9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8184A9B32AF343D8006484B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8184A9B42AF343E9006484B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8184A9B82AF3446A006484B9 /* Authentication */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8184A9B52AF343F7006484B9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8184A9B62AF34414006484B9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8184A9B72AF3441F006484B9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				81E2F0AF2AF554BD00550881 /* CustomTextField.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8184A9B82AF3446A006484B9 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8184A9B92AF3448B006484B9 /* LoginView.swift */,
+				8194D4272AF49B45002861B7 /* RegistrationView.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8184A9BA2AF3448B006484B9 /* LoginView.swift in Sources */,
 				8184A9A82AF34216006484B9 /* ContentView.swift in Sources */,
 				8184A9A62AF34216006484B9 /* My_WhatsAppApp.swift in Sources */,
+				8194D4282AF49B45002861B7 /* RegistrationView.swift in Sources */,
+				81E2F0B02AF554BD00550881 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
