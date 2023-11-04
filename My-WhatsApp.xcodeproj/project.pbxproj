@@ -21,6 +21,7 @@
 		81A4A9182AF65D0A00815471 /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A4A9172AF65D0A00815471 /* SettingsHeaderView.swift */; };
 		81A4A91A2AF65E6900815471 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A4A9192AF65E6900815471 /* SettingsCell.swift */; };
 		81A4A91C2AF69A6D00815471 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A4A91B2AF69A6D00815471 /* SettingsCellViewModel.swift */; };
+		81A4A91E2AF6A35000815471 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A4A91D2AF6A35000815471 /* EditProfileView.swift */; };
 		81E2F0B02AF554BD00550881 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2F0AF2AF554BD00550881 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		81A4A9172AF65D0A00815471 /* SettingsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
 		81A4A9192AF65E6900815471 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		81A4A91B2AF69A6D00815471 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
+		81A4A91D2AF6A35000815471 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		81E2F0AF2AF554BD00550881 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 				81A4A8FB2AF62EB700815471 /* SettingsView.swift */,
 				81A4A9172AF65D0A00815471 /* SettingsHeaderView.swift */,
 				81A4A9192AF65E6900815471 /* SettingsCell.swift */,
+				81A4A91D2AF6A35000815471 /* EditProfileView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81A4A91E2AF6A35000815471 /* EditProfileView.swift in Sources */,
 				8184A9A82AF34216006484B9 /* ContentView.swift in Sources */,
 				81A4A9152AF62EB700815471 /* LoginView.swift in Sources */,
 				81A4A91C2AF69A6D00815471 /* SettingsCellViewModel.swift in Sources */,
