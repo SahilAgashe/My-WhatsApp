@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsHeaderView: View {
     var body: some View {
         HStack {
-            Image(systemName: "person")
+            Image("saa")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 64, height: 64)

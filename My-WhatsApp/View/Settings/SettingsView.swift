@@ -18,8 +18,8 @@ struct SetttingsView: View {
                 SettingsHeaderView()
                 
                 VStack(spacing: 1) {
-                    ForEach.init((0...2), id: \.self) {ele in
-                        SettingsCell()
+                    ForEach.init(SettingsCellViewModel.allCases, id: \.self) {viewModel in
+                        SettingsCell(viewModel: viewModel)
                     }
                 }
                 
