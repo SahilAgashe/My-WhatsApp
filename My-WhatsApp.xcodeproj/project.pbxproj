@@ -18,6 +18,8 @@
 		81A4A9142AF62EB700815471 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A4A9082AF62EB700815471 /* RegistrationView.swift */; };
 		81A4A9152AF62EB700815471 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A4A9092AF62EB700815471 /* LoginView.swift */; };
 		81A4A9162AF62EB700815471 /* ChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A4A90B2AF62EB700815471 /* ChannelsView.swift */; };
+		81A4A9182AF65D0A00815471 /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A4A9172AF65D0A00815471 /* SettingsHeaderView.swift */; };
+		81A4A91A2AF65E6900815471 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A4A9192AF65E6900815471 /* SettingsCell.swift */; };
 		81E2F0B02AF554BD00550881 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2F0AF2AF554BD00550881 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		81A4A9082AF62EB700815471 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		81A4A9092AF62EB700815471 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		81A4A90B2AF62EB700815471 /* ChannelsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsView.swift; sourceTree = "<group>"; };
+		81A4A9172AF65D0A00815471 /* SettingsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
+		81A4A9192AF65E6900815471 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		81E2F0AF2AF554BD00550881 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				81A4A8FB2AF62EB700815471 /* SettingsView.swift */,
+				81A4A9172AF65D0A00815471 /* SettingsHeaderView.swift */,
+				81A4A9192AF65E6900815471 /* SettingsCell.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -251,7 +257,9 @@
 			files = (
 				8184A9A82AF34216006484B9 /* ContentView.swift in Sources */,
 				81A4A9152AF62EB700815471 /* LoginView.swift in Sources */,
+				81A4A91A2AF65E6900815471 /* SettingsCell.swift in Sources */,
 				81A4A9162AF62EB700815471 /* ChannelsView.swift in Sources */,
+				81A4A9182AF65D0A00815471 /* SettingsHeaderView.swift in Sources */,
 				81A4A9142AF62EB700815471 /* RegistrationView.swift in Sources */,
 				81A4A90F2AF62EB700815471 /* MainTabView.swift in Sources */,
 				8184A9A62AF34216006484B9 /* My_WhatsAppApp.swift in Sources */,

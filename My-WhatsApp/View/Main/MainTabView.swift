@@ -14,9 +14,9 @@ struct MainTabView: View {
     
     // MARK: - initializers
     init() {
-        UITabBar.appearance().backgroundColor = UIColor.secondarySystemBackground
+        UITabBar.appearance().backgroundColor = UIColor(white: 0.95, alpha: 0.8)
         UITabBar.appearance().isTranslucent = false
-        print("DEBUG: From init selected index is \(selectedIndex)")
+        print("DEBUG: From main tab init,selected index is \(selectedIndex)")
     }
     
     // MARK: - body

@@ -15,3 +15,9 @@ struct My_WhatsAppApp: App {
         }
     }
 }
+
+struct MyWhatsApp_Preview: PreviewProvider {
+    static var previews: some View {
+        MainTabView()
+    }
+}
