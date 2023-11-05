@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		817823AE2AF75C5E00A47D1C /* StatusSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817823AD2AF75C5E00A47D1C /* StatusSelectorView.swift */; };
+		817823B02AF764C600A47D1C /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817823AF2AF764C600A47D1C /* StatusViewModel.swift */; };
 		8184A9A62AF34216006484B9 /* My_WhatsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8184A9A52AF34216006484B9 /* My_WhatsAppApp.swift */; };
 		8184A9A82AF34216006484B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8184A9A72AF34216006484B9 /* ContentView.swift */; };
 		8184A9AA2AF34217006484B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8184A9A92AF34217006484B9 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		817823AD2AF75C5E00A47D1C /* StatusSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusSelectorView.swift; sourceTree = "<group>"; };
+		817823AF2AF764C600A47D1C /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		8184A9A22AF34216006484B9 /* My-WhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-WhatsApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8184A9A52AF34216006484B9 /* My_WhatsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_WhatsAppApp.swift; sourceTree = "<group>"; };
 		8184A9A72AF34216006484B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				81A4A91B2AF69A6D00815471 /* SettingsCellViewModel.swift */,
+				817823AF2AF764C600A47D1C /* StatusViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				81A4A9172AF65D0A00815471 /* SettingsHeaderView.swift */,
 				81A4A9192AF65E6900815471 /* SettingsCell.swift */,
 				81A4A91D2AF6A35000815471 /* EditProfileView.swift */,
+				817823AD2AF75C5E00A47D1C /* StatusSelectorView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -261,7 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817823B02AF764C600A47D1C /* StatusViewModel.swift in Sources */,
 				81A4A91E2AF6A35000815471 /* EditProfileView.swift in Sources */,
+				817823AE2AF75C5E00A47D1C /* StatusSelectorView.swift in Sources */,
 				8184A9A82AF34216006484B9 /* ContentView.swift in Sources */,
 				81A4A9152AF62EB700815471 /* LoginView.swift in Sources */,
 				81A4A91C2AF69A6D00815471 /* SettingsCellViewModel.swift in Sources */,
