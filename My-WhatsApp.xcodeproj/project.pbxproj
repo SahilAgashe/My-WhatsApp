@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		813E19BE2AF9442F00F0CC7E /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E19BD2AF9442F00F0CC7E /* ConversationCell.swift */; };
 		817823AE2AF75C5E00A47D1C /* StatusSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817823AD2AF75C5E00A47D1C /* StatusSelectorView.swift */; };
 		817823B02AF764C600A47D1C /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817823AF2AF764C600A47D1C /* StatusViewModel.swift */; };
 		817823B22AF77D6400A47D1C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817823B12AF77D6400A47D1C /* ImagePicker.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		813E19BD2AF9442F00F0CC7E /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		817823AD2AF75C5E00A47D1C /* StatusSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusSelectorView.swift; sourceTree = "<group>"; };
 		817823AF2AF764C600A47D1C /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		817823B12AF77D6400A47D1C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				81A4A8FD2AF62EB700815471 /* ConversationsView.swift */,
+				813E19BD2AF9442F00F0CC7E /* ConversationCell.swift */,
 			);
 			path = Conversations;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				81A4A90F2AF62EB700815471 /* MainTabView.swift in Sources */,
 				8184A9A62AF34216006484B9 /* My_WhatsAppApp.swift in Sources */,
 				81A4A90C2AF62EB700815471 /* SettingsView.swift in Sources */,
+				813E19BE2AF9442F00F0CC7E /* ConversationCell.swift in Sources */,
 				81A4A90E2AF62EB700815471 /* ChatView.swift in Sources */,
 				81A4A90D2AF62EB700815471 /* ConversationsView.swift in Sources */,
 				81E2F0B02AF554BD00550881 /* CustomTextField.swift in Sources */,
