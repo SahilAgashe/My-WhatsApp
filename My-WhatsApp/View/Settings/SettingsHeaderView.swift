@@ -32,3 +32,9 @@ struct SettingsHeaderView: View {
         .background(Color.white)
     }
 }
+
+struct SettingsHeaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        SettingsHeaderView()
+    }
+}

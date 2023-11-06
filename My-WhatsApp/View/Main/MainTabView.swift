@@ -31,7 +31,7 @@ struct MainTabView: View {
                     .tabItem { Image(systemName: "bubble.left.and.bubble.right") }
                     .tag(1)
                 
-                SetttingsView()
+                SettingsView()
                     .tabItem { Image(systemName: "gear") }
                     .tag(2)
             }

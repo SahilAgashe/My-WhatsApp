@@ -26,6 +26,8 @@ struct UserCell: View {
                     Text("Sahil Agashe")
                         .font(.system(size: 15))
                 }
+                .foregroundColor(.black)
+                
                 Spacer()
             }
             .padding(.horizontal)
