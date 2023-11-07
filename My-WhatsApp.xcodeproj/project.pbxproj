@@ -10,6 +10,7 @@
 		8118FF032AFA976F00C29CA8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118FF022AFA976F00C29CA8 /* Extensions.swift */; };
 		8118FF052AFAA4D800C29CA8 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118FF042AFAA4D800C29CA8 /* ChatBubble.swift */; };
 		8118FF072AFAA6FD00C29CA8 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118FF062AFAA6FD00C29CA8 /* MessageView.swift */; };
+		8118FF092AFAB64500C29CA8 /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118FF082AFAB64500C29CA8 /* CustomInputView.swift */; };
 		813E19BE2AF9442F00F0CC7E /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E19BD2AF9442F00F0CC7E /* ConversationCell.swift */; };
 		813E19C02AF9532B00F0CC7E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E19BF2AF9532B00F0CC7E /* UserCell.swift */; };
 		813E19C22AF9541900F0CC7E /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E19C12AF9541900F0CC7E /* NewMessageView.swift */; };
@@ -39,6 +40,7 @@
 		8118FF022AFA976F00C29CA8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8118FF042AFAA4D800C29CA8 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		8118FF062AFAA6FD00C29CA8 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		8118FF082AFAB64500C29CA8 /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
 		813E19BD2AF9442F00F0CC7E /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		813E19BF2AF9532B00F0CC7E /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		813E19C12AF9541900F0CC7E /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				81A4A8FF2AF62EB700815471 /* ChatView.swift */,
 				8118FF042AFAA4D800C29CA8 /* ChatBubble.swift */,
 				8118FF062AFAA6FD00C29CA8 /* MessageView.swift */,
+				8118FF082AFAB64500C29CA8 /* CustomInputView.swift */,
 			);
 			path = Chats;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				81A4A9142AF62EB700815471 /* RegistrationView.swift in Sources */,
 				81A4A90F2AF62EB700815471 /* MainTabView.swift in Sources */,
 				813E19C42AF9652B00F0CC7E /* SearchBar.swift in Sources */,
+				8118FF092AFAB64500C29CA8 /* CustomInputView.swift in Sources */,
 				8184A9A62AF34216006484B9 /* My_WhatsAppApp.swift in Sources */,
 				81A4A90C2AF62EB700815471 /* SettingsView.swift in Sources */,
 				813E19BE2AF9442F00F0CC7E /* ConversationCell.swift in Sources */,
