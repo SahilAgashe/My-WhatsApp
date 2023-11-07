@@ -23,7 +23,12 @@ struct ConversationsView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 4) {
                     ForEach((0 ... 10), id: \.self) { element in
-                        ConversationCell()
+                        NavigationLink {
+                            ChatView()
+                        } label: {
+                            ConversationCell()
+                        }
+
                     }
                 }
             }
