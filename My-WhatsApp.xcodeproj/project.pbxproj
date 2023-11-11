@@ -35,6 +35,7 @@
 		8107813F2AFFF3ED00151BDB /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8107813E2AFFF3ED00151BDB /* FirebaseRemoteConfigSwift */; };
 		810781412AFFF3ED00151BDB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 810781402AFFF3ED00151BDB /* FirebaseStorage */; };
 		810781432AFFF3ED00151BDB /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 810781422AFFF3ED00151BDB /* FirebaseStorageCombine-Community */; };
+		810781452AFFFA0D00151BDB /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810781442AFFFA0D00151BDB /* AuthViewModel.swift */; };
 		8118FF032AFA976F00C29CA8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118FF022AFA976F00C29CA8 /* Extensions.swift */; };
 		8118FF052AFAA4D800C29CA8 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118FF042AFAA4D800C29CA8 /* ChatBubble.swift */; };
 		8118FF072AFAA6FD00C29CA8 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118FF062AFAA6FD00C29CA8 /* MessageView.swift */; };
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		8107810A2AFFED5800151BDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		810781442AFFFA0D00151BDB /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		8118FF022AFA976F00C29CA8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8118FF042AFAA4D800C29CA8 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		8118FF062AFAA6FD00C29CA8 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				81A4A91B2AF69A6D00815471 /* SettingsCellViewModel.swift */,
 				817823AF2AF764C600A47D1C /* StatusViewModel.swift */,
 				8118FF0C2AFABF9800C29CA8 /* ChatViewModel.swift */,
+				810781442AFFFA0D00151BDB /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				8184A9A62AF34216006484B9 /* My_WhatsAppApp.swift in Sources */,
 				81A4A90C2AF62EB700815471 /* SettingsView.swift in Sources */,
 				813E19BE2AF9442F00F0CC7E /* ConversationCell.swift in Sources */,
+				810781452AFFFA0D00151BDB /* AuthViewModel.swift in Sources */,
 				81A4A90E2AF62EB700815471 /* ChatView.swift in Sources */,
 				81A4A90D2AF62EB700815471 /* ConversationsView.swift in Sources */,
 				81E2F0B02AF554BD00550881 /* CustomTextField.swift in Sources */,
