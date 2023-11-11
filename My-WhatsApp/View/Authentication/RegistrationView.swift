@@ -44,7 +44,7 @@ struct RegistrationView: View {
                                     isSecureField: false)
                     
                     CustomTextField(imageName: "person",
-                                    placeholderText: "Fullname",
+                                    placeholderText: "Full name",
                                     text: $fullname,
                                     isSecureField: false)
                     
@@ -62,7 +62,7 @@ struct RegistrationView: View {
             
             Button {
                 print("DEBUG: Sign up button pressed...")
-                viewModel.register()
+                viewModel.register(withEmail: email, password: password, fullname: fullname, username: username)
             } label: {
                 Text("Sign Up")
                     .font(.headline)
