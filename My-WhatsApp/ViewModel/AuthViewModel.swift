@@ -26,6 +26,24 @@ class AuthViewModel: NSObject, ObservableObject {
                 return
             }
             
+            guard let user: User = result?.user
+            else {
+                print("DEBUG: Unable to get user from result...")
+                return
+            }
+            
+            let data: [String: Any] = ["email": email,
+                                       "username": username,
+                                       "fullname": fullname]
+            
+            Firestore.firestore().collection("users").document(user.uid).setData(data) { error in
+                if let error {
+                    print("DEBUG: Unable to upload user details because error => \(error)")
+                } else {
+                    print("DEBUG: Successfully uploaded user details...")
+                }
+            }
+            
             print("DEBUG: Successfully registered user with firebase...")
         }
     }
