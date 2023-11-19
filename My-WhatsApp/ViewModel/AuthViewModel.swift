@@ -9,6 +9,9 @@ import Firebase
 
 class AuthViewModel: NSObject, ObservableObject {
     
+    @Published var didAuthenticateUser = false
+    private var tempCurrentUser: User?
+    
     func login() {
         print("DEBUG: login called...")
     }
@@ -32,6 +35,8 @@ class AuthViewModel: NSObject, ObservableObject {
                 return
             }
             
+            self.tempCurrentUser = user
+            
             let data: [String: Any] = ["email": email,
                                        "username": username,
                                        "fullname": fullname]
@@ -41,6 +46,7 @@ class AuthViewModel: NSObject, ObservableObject {
                     print("DEBUG: Unable to upload user details because error => \(error)")
                 } else {
                     print("DEBUG: Successfully uploaded user details...")
+                    self.didAuthenticateUser = true
                 }
             }
             
@@ -48,8 +54,25 @@ class AuthViewModel: NSObject, ObservableObject {
         }
     }
     
-    func uploadProfileImage() {
+    func uploadProfileImage(_ image: UIImage) {
         print("DEBUG: uploadProfileImage called...")
+        
+        guard let uid = tempCurrentUser?.uid 
+        else
+        {
+            print("DEBUG: Guard let error unable to get uid!")
+            return
+        }
+        
+        ImageUploader.uploadImage(image: image) { imageUrl in
+            Firestore.firestore().collection("users").document(uid).updateData(["profileImageUrl": imageUrl]) { error in
+                if let error {
+                    print("DEBUG: Unable to update data profileImageUrl with error \(error.localizedDescription)")
+                }
+                
+                print("DEBUG: Successfully updated profileImageUrl...")
+            }
+        }
     }
     
     func signout() {
