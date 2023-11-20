@@ -18,13 +18,13 @@ struct My_WhatsAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView().environmentObject(AuthViewModel())
+            ContentView().environmentObject(AuthViewModel.shared)
         }
     }
 }
 
 struct MyWhatsApp_Preview: PreviewProvider {
     static var previews: some View {
-        LoginView().environmentObject(AuthViewModel())
+        ContentView().environmentObject(AuthViewModel.shared)
     }
 }

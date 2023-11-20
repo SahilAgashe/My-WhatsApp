@@ -63,7 +63,7 @@ struct LoginView: View {
                 
                 Button {
                     print("DEBUG: Sign In button pressed...")
-                    viewModel.login()
+                    viewModel.login(withEmail: email, password: password)
                 } label: {
                     Text("Sign In")
                         .font(.headline)

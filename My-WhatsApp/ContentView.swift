@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var viewModel: AuthViewModel
+    
+    // MARK: - body
     var body: some View {
-        VStack {
-            Text("Thank You God! For this learning opportunity!!!")
-            Text("Hello, I am Sahil!!!")
+        Group {
+            if viewModel.userSession != nil {
+                MainTabView()
+            } else {
+                LoginView()
+            }
         }
-        .padding()
     }
 }
 
