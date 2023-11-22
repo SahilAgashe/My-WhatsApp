@@ -16,8 +16,11 @@ class AuthViewModel: NSObject, ObservableObject {
     static let shared = AuthViewModel()
     
     override init() {
+        super.init()
+        
         print("DEBUG: AuthViewModel did init...")
         userSession = Auth.auth().currentUser
+        fetchUser()
     }
     
     func login(withEmail email: String, password: String) {
@@ -41,7 +44,7 @@ class AuthViewModel: NSObject, ObservableObject {
         print("DEBUG: fullname => \(fullname)")
         print("DEBUG: username => \(username)")
         
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+        Auth.auth().createUser(withEmail: email, password: password) { (result: AuthDataResult?, error: Error?) in
             if let error {
                 print("DEBUG: Failed to register user with error => \(error)")
                 return
@@ -86,9 +89,10 @@ class AuthViewModel: NSObject, ObservableObject {
             Firestore.firestore().collection("users").document(uid).updateData(["profileImageUrl": imageUrl]) { error in
                 if let error {
                     print("DEBUG: Unable to update data profileImageUrl with error \(error.localizedDescription)")
+                    return
                 }
-                
                 print("DEBUG: Successfully updated profileImageUrl...")
+                self.userSession = self.tempCurrentUser
             }
         }
     }
@@ -97,5 +101,22 @@ class AuthViewModel: NSObject, ObservableObject {
         print("DEBUG: signout called...")
         userSession = nil
         try? Auth.auth().signOut()
+    }
+    
+    func fetchUser() {
+        guard let uid = userSession?.uid else {
+            print("DEBUG: Guard let error unable to get uid from user-session!")
+            return
+        }
+        
+        Firestore.firestore().collection("users").document(uid).getDocument { (snapshot: DocumentSnapshot?, error: Error?) in
+            
+            guard let data = snapshot?.data() else {
+                print("DEBUG: Guard let error unable to get data from snapshot")
+                return
+            }
+            
+            print("DEBUG: snapshot data is \(data)")
+        }
     }
 }
