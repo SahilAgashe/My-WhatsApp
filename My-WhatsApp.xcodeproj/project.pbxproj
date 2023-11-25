@@ -65,6 +65,7 @@
 		81A4A91A2AF65E6900815471 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A4A9192AF65E6900815471 /* SettingsCell.swift */; };
 		81A4A91C2AF69A6D00815471 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A4A91B2AF69A6D00815471 /* SettingsCellViewModel.swift */; };
 		81A4A91E2AF6A35000815471 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A4A91D2AF6A35000815471 /* EditProfileView.swift */; };
+		81C201062B11911D0001FC43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C201052B11911D0001FC43 /* User.swift */; };
 		81DA0B3C2B052CBE004799B7 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DA0B3B2B052CBE004799B7 /* ImageUploader.swift */; };
 		81E2F0B02AF554BD00550881 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2F0AF2AF554BD00550881 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
@@ -102,6 +103,7 @@
 		81A4A9192AF65E6900815471 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		81A4A91B2AF69A6D00815471 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
 		81A4A91D2AF6A35000815471 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		81C201052B11911D0001FC43 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		81DA0B3B2B052CBE004799B7 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		81E2F0AF2AF554BD00550881 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				8118FF0A2AFABF0300C29CA8 /* Message.swift */,
+				81C201052B11911D0001FC43 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				81A4A91E2AF6A35000815471 /* EditProfileView.swift in Sources */,
 				817823AE2AF75C5E00A47D1C /* StatusSelectorView.swift in Sources */,
 				817823B22AF77D6400A47D1C /* ImagePicker.swift in Sources */,
+				81C201062B11911D0001FC43 /* User.swift in Sources */,
 				8184A9A82AF34216006484B9 /* ContentView.swift in Sources */,
 				81A4A9152AF62EB700815471 /* LoginView.swift in Sources */,
 				813E19C02AF9532B00F0CC7E /* UserCell.swift in Sources */,

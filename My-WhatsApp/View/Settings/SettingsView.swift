@@ -9,6 +9,14 @@ import SwiftUI
 
 struct SettingsView: View {
     
+    private let user: User
+    
+    // MARK: - Initializers
+    init(user: User) {
+        self.user = user
+    }
+    
+    // MARK: - body
     var body: some View {
         ZStack {
             Color(.systemGroupedBackground)
@@ -18,7 +26,7 @@ struct SettingsView: View {
                 NavigationLink {
                     EditProfileView()
                 } label: {
-                    SettingsHeaderView()
+                    SettingsHeaderView(user: user)
                 }
 
                 
@@ -46,8 +54,9 @@ struct SettingsView: View {
     }
 }
 
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
-    }
-}
+// MARK: Uncomment Previews Whenever Required
+//struct SettingsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SettingsView(user: User(username: "", fullname: "", email: "", profileImageUrl: ""))
+//    }
+//}

@@ -9,9 +9,11 @@ import Firebase
 
 class AuthViewModel: NSObject, ObservableObject {
     
+    // note: User and FirebaseAuth.User are two different things
     @Published var didAuthenticateUser = false
-    @Published var userSession: User?
-    private var tempCurrentUser: User?
+    @Published var userSession: FirebaseAuth.User?
+    @Published var currentUser: User?
+    private var tempCurrentUser: FirebaseAuth.User?
     
     static let shared = AuthViewModel()
     
@@ -50,7 +52,7 @@ class AuthViewModel: NSObject, ObservableObject {
                 return
             }
             
-            guard let user: User = result?.user
+            guard let user: FirebaseAuth.User = result?.user
             else {
                 print("DEBUG: Unable to get user from result...")
                 return
@@ -111,12 +113,19 @@ class AuthViewModel: NSObject, ObservableObject {
         
         Firestore.firestore().collection("users").document(uid).getDocument { (snapshot: DocumentSnapshot?, error: Error?) in
             
-            guard let data = snapshot?.data() else {
+            guard let _ = snapshot?.data() else {
                 print("DEBUG: Guard let error unable to get data from snapshot")
                 return
             }
             
-            print("DEBUG: snapshot data is \(data)")
+            guard let user = try? snapshot?.data(as: User.self)
+            else {
+                print("DEBUG: Guard let error unable to get user object from snapshot!")
+                return
+            }
+            
+            print("DEBUG: User object is \(user)")
+            self.currentUser = user
         }
     }
 }
