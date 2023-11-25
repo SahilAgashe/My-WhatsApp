@@ -54,7 +54,7 @@ struct SettingsView: View {
     }
 }
 
-// MARK: Uncomment Previews Whenever Required
+// MARK: - Uncomment Previews Whenever Required
 //struct SettingsView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        SettingsView(user: User(username: "", fullname: "", email: "", profileImageUrl: ""))

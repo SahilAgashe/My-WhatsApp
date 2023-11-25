@@ -14,3 +14,6 @@ struct User: Identifiable, Decodable {
     let email: String
     let profileImageUrl: String
 }
+
+
+let MOCK_USER = User(username: "TEST", fullname: "TEST TEST", email: "Test@email.com", profileImageUrl: "www.google.com")

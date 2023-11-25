@@ -10,6 +10,11 @@ import SwiftUI
 struct ChatView: View {
     @State private var messageText = ""
     @ObservedObject var viewModel = ChatViewModel()
+    private let user: User
+    
+    init(user: User) {
+        self.user = user
+    }
     
     var body: some View {
         VStack {
@@ -26,7 +31,7 @@ struct ChatView: View {
             // input view
             CustomInputView(text: $messageText, action: sendMessage)
         }
-        .navigationTitle("Sahil Agashe")
+        .navigationTitle(user.username)
         .navigationBarTitleDisplayMode(.inline)
         .padding(.vertical)
     }
@@ -38,8 +43,9 @@ struct ChatView: View {
     }
 }
 
-struct ChatView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChatView()
-    }
-}
+// MARK: - Uncomment Previews Whenever Required
+//struct ChatView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ChatView()
+//    }
+//}
