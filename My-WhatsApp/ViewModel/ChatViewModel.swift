@@ -14,8 +14,21 @@ class ChatViewModel: ObservableObject {
     
     init(user: User) {
         self.user = user
+        fetchMessages()
     }
     
+    func fetchMessages() {
+        guard let currentUid = AuthViewModel.shared.userSession?.uid else { return }
+        guard let chatPartnerId = user.id else { return }
+        
+        let query = COLLECTION_MESSAGES.document(currentUid).collection(chatPartnerId)
+        query.getDocuments { (snapshot: QuerySnapshot?, error: Error?) in
+            guard let documents = snapshot?.documents else { return }
+            self.messages = documents.compactMap({ try? $0.data(as: Message.self)})
+            
+            print("DEBUG: messages are \(self.messages)")
+        }
+    }
     
     func sendMessage(_ messageText: String) {
         guard let currentUid = AuthViewModel.shared.userSession?.uid else { return }

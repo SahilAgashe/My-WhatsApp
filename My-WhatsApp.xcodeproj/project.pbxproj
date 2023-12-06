@@ -71,6 +71,7 @@
 		81C2010D2B11C7470001FC43 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C2010C2B11C7470001FC43 /* Constants.swift */; };
 		81DA0B3C2B052CBE004799B7 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DA0B3B2B052CBE004799B7 /* ImageUploader.swift */; };
 		81E2F0B02AF554BD00550881 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2F0AF2AF554BD00550881 /* CustomTextField.swift */; };
+		81FAF4002B201A6800C92EED /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAF3FF2B201A6800C92EED /* MessageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +112,7 @@
 		81C2010C2B11C7470001FC43 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		81DA0B3B2B052CBE004799B7 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		81E2F0AF2AF554BD00550881 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		81FAF3FF2B201A6800C92EED /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 				8118FF0C2AFABF9800C29CA8 /* ChatViewModel.swift */,
 				810781442AFFFA0D00151BDB /* AuthViewModel.swift */,
 				81C2010A2B11C6650001FC43 /* NewMessageViewModel.swift */,
+				81FAF3FF2B201A6800C92EED /* MessageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				81C2010D2B11C7470001FC43 /* Constants.swift in Sources */,
 				8167A5EF2B00A3D400E03479 /* ProfilePhotoSelectorView.swift in Sources */,
 				8118FF092AFAB64500C29CA8 /* CustomInputView.swift in Sources */,
+				81FAF4002B201A6800C92EED /* MessageViewModel.swift in Sources */,
 				8184A9A62AF34216006484B9 /* My_WhatsAppApp.swift in Sources */,
 				81A4A90C2AF62EB700815471 /* SettingsView.swift in Sources */,
 				813E19BE2AF9442F00F0CC7E /* ConversationCell.swift in Sources */,

@@ -6,18 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
 
-struct MesssageView: View {
+struct MessageView: View {
     
-    var isFromCurrentUser: Bool
-    var messageText: String
+    let viewModel: MessageViewModel
     
     var body: some View {
         HStack {
-            if isFromCurrentUser {
+            if viewModel.isFromCurrentUser {
                 Spacer()
                 
-                Text(messageText)
+                Text(viewModel.message.text)
                     .padding(12)
                     .background(Color.blue)
                     .font(.system(size: 15))
@@ -33,7 +33,7 @@ struct MesssageView: View {
                         .frame(width: 32, height: 32)
                         .clipShape(Circle())
                     
-                    Text(messageText)
+                    Text(viewModel.message.text)
                         .padding(12)
                         .background(Color(UIColor.systemGray5))
                         .font(.system(size: 15))
@@ -49,9 +49,9 @@ struct MesssageView: View {
     }
 }
 
-struct MessageView_Previews: PreviewProvider {
-    static var previews: some View {
-        MesssageView(isFromCurrentUser: true, messageText: "Hii")
-        MesssageView(isFromCurrentUser: false, messageText: "Hello")
-    }
-}
+// MARK: - Uncomment Previews Whenever Required
+//struct MessageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MessageView(viewModel: MessageViewModel(message: Message(id: "", fromId: "", toId: "", read: false, text: "Hi Sahil, how are you?", timestamp: Timestamp())))
+//    }
+//}
