@@ -23,7 +23,7 @@ class NewMessageViewModel: ObservableObject {
                 return
             }
             
-            self.users = documents.compactMap({ try? $0.data(as: User.self) })
+            self.users = documents.compactMap({ try? $0.data(as: User.self) }).filter({ $0.id != AuthViewModel.shared.userSession?.uid})
             print("DEBUG: users are \(self.users)")
         }
     }

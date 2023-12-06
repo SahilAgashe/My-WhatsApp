@@ -23,7 +23,7 @@ struct ChatView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                     ForEach(viewModel.messages) { message in
-                        MesssageView(isFromCurrentUser: message.isFromCurrentUser, messageText: message.messageText)
+//                        MesssageView(isFromCurrentUser: message.isFromCurrentUser, messageText: message.messageText)
                     }
                 }
             }
