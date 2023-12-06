@@ -24,8 +24,14 @@ class ChatViewModel: ObservableObject {
         let query = COLLECTION_MESSAGES.document(currentUid).collection(chatPartnerId)
         query.getDocuments { (snapshot: QuerySnapshot?, error: Error?) in
             guard let documents = snapshot?.documents else { return }
-            self.messages = documents.compactMap({ try? $0.data(as: Message.self)})
+            var messages = documents.compactMap({ try? $0.data(as: Message.self)})
             
+            for (index, message) in messages.enumerated() where message.fromId != currentUid {
+                // setting user , for message not from current user
+                messages[index].user = self.user
+            }
+            
+            self.messages = messages
             print("DEBUG: messages are \(self.messages)")
         }
     }

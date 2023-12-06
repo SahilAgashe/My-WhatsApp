@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Firebase
+import Kingfisher
 
 struct MessageView: View {
     
@@ -27,7 +28,7 @@ struct MessageView: View {
                     .padding(.leading, 100)
             } else {
                 HStack(alignment: .bottom) {
-                    Image("saa")
+                    KFImage(viewModel.profileImageUrl)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 32, height: 32)
