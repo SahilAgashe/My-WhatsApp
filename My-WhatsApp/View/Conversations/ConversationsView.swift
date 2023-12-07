@@ -12,6 +12,7 @@ struct ConversationsView: View {
     @State private var showNewMessageView = false
     @State private var showChatView = false
     @State private var selectedUser: User?
+    @ObservedObject var viewModel = ConversationsViewModel()
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
@@ -25,11 +26,11 @@ struct ConversationsView: View {
             // chats
             ScrollView {
                 VStack(alignment: .leading, spacing: 4) {
-                    ForEach((0 ... 10), id: \.self) { element in
+                    ForEach(viewModel.recentMessages) { message in
                         NavigationLink {
                             ChatView(user: MOCK_USER)
                         } label: {
-                            ConversationCell()
+                            ConversationCell(viewModel: MessageViewModel(message: message))
                         }
 
                     }
@@ -59,8 +60,9 @@ struct ConversationsView: View {
     }
 }
 
-struct ConversationsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ConversationsView()
-    }
-}
+// MARK: - Uncomment Previews Whenever Required
+//struct ConversationsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ConversationsView()
+//    }
+//}
