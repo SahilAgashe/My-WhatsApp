@@ -52,6 +52,9 @@ struct ConversationsView: View {
             }
 
         }
+        .onAppear(perform: {
+            viewModel.fetchRecentMessages()
+        })
     }
 }
 
